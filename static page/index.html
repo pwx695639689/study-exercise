@@ -683,6 +683,18 @@
 
     	});
     });
+
+    // 输入框
+
+    $('.search-input').bind({
+		focus:function(){
+			$(".search-label").hide();
+		},
+		blur:function(){
+			$(".search-label").show();
+		}
+	});
+
 </script>
 </body>
 </html>
