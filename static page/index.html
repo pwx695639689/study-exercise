@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台管理</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="style/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style/calendar.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<img src="image/logo.png" alt="">
+		</div>
+		<div class="login">
+				<i class="login-i fa fa-user"></i>
+				<a href="#" class="login-text">登录</a>
+		</div>
+		<div class="search">
+			<label class="search-label" for="input-s" id="label-s">请输入关键字</label>
+			<input class="search-input" id="input-s" type="text">
+			<i class="fa fa-search search-i" aria-hidden="true" id="i-s"></i>
+		</div>
+	</header>
+	<div class="container">
+		<aside class="aside">
+			<div class="user">
+				<div class="user-info">
+					<img src="image/user.jpg" alt="" class="user-head">
+					<span class="user-name">Chronos</span>
+				</div>
+				<div class="user-data">
+					<div class="collect">
+						<span class="collect-data">110</span>
+						<span class="collect-text">收藏</span>
+					</div>
+					<div class="fans">
+						<span class="fans-data">666</span>
+						<span class="fans-text">粉丝</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<ul class="menu-ul">
+					<li>
+						<i class="fa fa-table" aria-hidden="true"></i>
+						<a href="#" class="menu-name menu-name1">个人报表</a>
+						<div class="menu2">
+							<ul class="menu2-ul">
+								<li>
+									<i class="fa fa-file" aria-hidden="true"></i>
+									<span class="menu2name">文件一</span>
+								</li>
+								<li>
+									<i class="fa fa-file" aria-hidden="true"></i>
+									<span class="menu2name">文件一</span>
+								</li>
+								<li>
+									<i class="fa fa-file" aria-hidden="true"></i>
+									<span class="menu2name">文件一</span>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<i class="fa fa-star" aria-hidden="true"></i>
+						<a href="#" class="menu-name">个人收藏</a>
+					</li>
+					<li>
+						<i class="fa fa-share" aria-hidden="true"></i>
+						<a href="#" class="menu-name">我的分享</a>
+					</li>
+					<li>
+						<i class="fa fa-picture-o" aria-hidden="true"></i>
+						<a href="#" class="menu-name">图库</a>
+					</li>
+					<li>
+						<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+						<a href="#" class="menu-name">成长记录</a>
+					</li>
+					<li>
+						<i class="fa fa-book" aria-hidden="true"></i>
+						<a href="#" class="menu-name">账户信息</a>
+					</li>
+				</ul>
+			</div>
+
+		</aside>
+		<section class="section">
+			<div class="section-header">
+				<span>C站</span>/<span>个人报表</span>/<span>文件一</span>/<span>文档一</span>
+			</div>
+			<div class="section-container">
+				<div class="sec-query">
+					<div class="query-item">
+						<span class="query-name">查询项</span>
+						<form action="#" class="query-form">
+							<select name="query" id="query">
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+						</form>
+					</div>
+					<div class="query-deal">
+						<div class="deal-item item1">
+							<span class="deal-name">买方</span>
+							<form action="#" class="deal-form">
+								<select name="query" id="query">
+									<option value="1">A</option>
+									<option value="2">B</option>
+									<option value="3">C</option>
+								</select>
+							</form>
+						</div>
+						<div class="deal-item item2">
+							<span class="deal-name">卖方</span>
+							<form action="#" class="deal-form">
+								<select name="query" id="query">
+									<option value="1">A</option>
+									<option value="2">B</option>
+									<option value="3">C</option>
+								</select>
+							</form>
+						</div>
+						<img src="image/jiantou.png" alt="" class="deal-img">
+					</div>
+					<div class="query-detail">
+						<div class="detail-top">
+							<div class="detail-item detail1">
+								<span class="detail-name">日期</span>
+								<form action="#" class="detail-form">
+									<input type="date" class="detail-form-input">
+								</form>
+							</div>
+							<div class="detail-item detail2">
+								<span class="detail-name">总耗时</span>
+								<form action="#" class="detail-form">
+									<select name="query" id="query">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+								</form>
+							</div>
+						</div>
+						<div class="detail-bottom">
+							<div class="detail-item detail3">
+								<span class="detail-name">人数</span>
+								<form action="#" class="detail-form">
+									<select name="query" id="query">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+								</form>
+							</div>
+							<div class="detail-item detail4">
+								<span class="detail-name">成交项</span>
+								<form action="#" class="detail-form">
+									<select name="query" id="query">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+									</select>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="query-search">
+						<button class="search-btn">搜索</button>
+					</div>
+				</div>
+				<div class="sec-history">
+					<div class="his-timeline">
+						<div class="left-key"><</div>
+						<ul class="timeline-item">
+							<li>
+								<span class="item-time">10:00 am</span>
+								<p class="item-money"><span class="rmb">¥</span>1200</p>
+							</li>
+							<li>
+								<span class="item-time">10:00 am</span>
+								<p class="item-money"><span class="rmb">¥</span>1200</p>
+							</li>
+							<li>
+								<span class="item-time">10:00 am</span>
+								<p class="item-money"><span class="rmb">¥</span>1200</p>
+							</li>
+							<li>
+								<span class="item-time">10:00 am</span>
+								<p class="item-money"><span class="rmb">¥</span>1200</p>
+							</li>
+							<li>
+								<span class="item-time">10:00 am</span>
+								<p class="item-money"><span class="rmb">¥</span>1200</p>
+							</li>
+							<li>
+								<span class="item-time">10:00 am</span>
+								<p class="item-money"><span class="rmb">¥</span>1200</p>
+							</li>
+						</ul>
+						<div class="right-key">></div>
+					</div>
+					<div class="his-que">
+						<img src="image/tubiao.png" alt="">
+						<span class="que-text">历史查询</span>
+					</div>
+				</div>
+				<div class="sec-statis">
+					<h1 class="statis-head">2018年4月统计</h1>
+					<div class="statis-item">
+						<div class="item-sta statis-item1">
+							<div class="price">
+								<span class="price-num">123123</span>
+								<span class="price-text">成交量</span>
+							</div>
+							<div class="box"></div>
+						</div>
+						<div class="item-sta statis-item2">
+							<div class="price">
+								<span class="price-num">123123</span>
+								<span class="price-text">成交量</span>
+							</div>
+							<div class="box"></div>
+						</div>
+						<div class="item-sta statis-item3">
+							<div class="price">
+								<span class="price-num">123123</span>
+								<span class="price-text">成交量</span>
+							</div>
+							<div class="box"></div>
+						</div>
+						<div class="item-sta statis-item4">
+							<div class="price">
+								<span class="price-num">123123</span>
+								<span class="price-text">成交量</span>
+							</div>
+							<div class="box"></div>
+						</div>
+					</div>
+				</div>
+				<div class="sec-ele1">
+					<div class="ui-tab">
+						<h1 class="tab-head">第一组项目</h1>
+						<div class="tab-body">
+							<input type="radio" name="ui-tab" id="item1" checked="checked" /> 
+        					<input type="radio" name="ui-tab" id="item2" /> 
+        					<input type="radio" name="ui-tab" id="item3" />
+        					<input type="radio" name="ui-tab" id="item4" />
+        					<input type="radio" name="ui-tab" id="item5" />
+        					<div class="ui-nav">
+            					<ul>
+            					    <li class="item1"><label for="item1">项目1</label></li>
+            					    <li class="item2"><label for="item2">项目2</label></li>
+            					    <li class="item3"><label for="item3">项目3</label></li>
+            					    <li class="item4"><label for="item4">项目4</label></li>
+            					    <li class="item5"><label for="item5">项目5</label></li>
+            					</ul>
+        					</div>
+        					<div class="ui-content">
+            					<ul class="item1-list">
+            					    <li>
+            					    	<table>
+            					    		<tbody>
+            					    			<tr>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    				<td>购买材料1</td>
+            					    			</tr>
+            					    		</tbody>
+            					    	</table>
+            					    </li>
+            					</ul>
+            					<ul class="item2-list">
+            					    <li>
+            					    	<table>
+            					    		<tbody>
+            					    			<tr>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    				<td>购买材料2</td>
+            					    			</tr>
+            					    		</tbody>
+            					    	</table>
+            					    </li>
+            					</ul>
+            					<ul class="item3-list">
+            					    <li>
+            					    	<table>
+            					    		<tbody>
+            					    			<tr>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    				<td>购买材料3</td>
+            					    			</tr>
+            					    		</tbody>
+            					    	</table>
+            					    </li>
+            					</ul>
+            					<ul class="item4-list">
+            					    <li>
+            					    	<table>
+            					    		<tbody>
+            					    			<tr>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    				<td>购买材料4</td>
+            					    			</tr>
+            					    		</tbody>
+            					    	</table>
+            					    </li>
+            					</ul>
+            					<ul class="item5-list">
+            					    <li>
+            					    	<table>
+            					    		<tbody>
+            					    			<tr>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    			</tr>
+            					    			<tr>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    				<td>购买材料5</td>
+            					    			</tr>
+            					    		</tbody>
+            					    	</table>
+            					    </li>
+            					</ul>
+        					</div>
+						</div>
+    				</div>
+					<div class="ele1-query">
+						<h1 class="query-head">第一组项目</h1>
+						<div class="que-content">
+							<h5 class="topic">标题</h5>
+							<p>项目内容1</p>
+							<div class="content-type">
+								<div class="type1">
+									<h5>价格</h5>
+									<p>¥158</p>
+								</div>
+								<div class="type2">
+									<h5>负责人</h5>
+									<p>小A</p>
+								</div>
+							</div>
+							<div class="content-detail">
+								<h5>详细描述</h5>
+								<p>该项目目前负责人是……</p>
+							</div>
+							<div class="content-sub">
+								<input type="checkbox">
+								<span class="secr-text">遵守保密协议</span>
+								<button class="content-btn">搜索</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sec-ele2">
+					<div class="ele2-cal" id="demo">
+						<h1 class="cal-head">第一组项目</h1>
+						<div id="ca"></div>
+  						<input type="text" id="dt" placeholder="trigger calendar">
+ 						<div id="dd"></div>
+					</div>
+					<div class="ranking">
+						<h1 class="ranking-head">排行榜</h1>
+						<table>
+							<tr>
+								<td>排名</td>
+								<td>品牌</td>
+								<td>搜索指数</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>某商品</td>
+								<td>
+									<span class="index-number">12345678</span>
+									<div class="bar">
+										<div class="bar-color"></div>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+<script src="js/jquery.js"></script> 
+<script src="js/calendar.js"></script> 
+<script>
+    $('#ca').calendar({
+        width: 320,
+        height: 320,
+        data: [
+			{
+			  date: '2015/12/24',
+			  value: 'Christmas Eve'
+			},
+			{
+			  date: '2015/12/25',
+			  value: 'Merry Christmas'
+			},
+			{
+			  date: '2016/01/01',
+			  value: 'Happy New Year'
+			}
+		],
+        onSelected: function (view, date, data) {
+            console.log('view:' + view)
+            alert('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+
+    $('#dd').calendar({
+        trigger: '#dt',
+        zIndex: 999,
+		format: 'yyyy-mm-dd',
+        onSelected: function (view, date, data) {
+            console.log('event: onSelected')
+        },
+        onClose: function (view, date, data) {
+            console.log('event: onClose')
+            console.log('view:' + view)
+            console.log('date:' + date)
+            console.log('data:' + (data || 'None'));
+        }
+    });
+
+
+    // 侧边栏
+
+    $(function(){
+    	$(".menu2").hide();
+    	$(".menu-name1").click(function(){
+    		$(".menu2").toggle("500");
+
+    	});
+    });
+</script>
+</body>
+</html>
