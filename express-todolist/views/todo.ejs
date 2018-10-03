@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="/assets/styles.css" type="text/css">
+  <script src="/assets/todo-list.js"></script>
+</head>
+<body>
+  <h1 class="header">Todo List</h1>
+  <div id="todo-table">
+    <form>
+      <input type="text" name="item" placeholder="Add new item">
+      <button type="submit">Add Item</button>
+    </form>
+    <ul>
+      <% todos.forEach(function(todo) {
+      %><li><%= todo.item %></li><%
+    }) %>
+    </ul>
+  </div>
+</body>
+</html>
