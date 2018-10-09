@@ -1,7 +1,4 @@
 /**
- * Created by jm on 2017/8/11.
- */
-/**
  *  子弹对象
  *  @param {Object} configObj 游戏基本配置
  */

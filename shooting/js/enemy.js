@@ -1,7 +1,4 @@
 /**
- * Created by jm on 2017/8/11.
- */
-/**
  * 敌人对象
  */
 var Enemy = function (configObj) {

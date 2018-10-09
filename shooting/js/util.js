@@ -1,7 +1,4 @@
-/**
- * @author 张静宜  471938302@qq.com
- * @overview p5项目 - 射击游戏 - 辅助函数
- */
+// 工具函数
 var doc = document;
 
 // requestAnimationFrame 兼容

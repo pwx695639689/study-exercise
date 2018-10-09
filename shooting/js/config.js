@@ -1,8 +1,4 @@
 /**
- * Created by jm on 2017/8/11.
- */
-
-/**
  * 默认的游戏配置
  * @type {{status: string, planeWidth: number, planeHeight: number, planeImg: string, planeSpeed: number, bulletWidth: number, bulletHeight: number, bulletSpeed: number, bulletColor: string, enemyWidth: number, enemyHeight: number, enemySpeed: number, enemyDirection: string, enemyNormalImg: string, enemyBoomedImg: string}}
  */
